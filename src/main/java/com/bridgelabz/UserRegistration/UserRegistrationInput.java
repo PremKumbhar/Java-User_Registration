@@ -13,4 +13,10 @@ public class UserRegistrationInput {
         matcher = pattern.matcher(firstName);
         return matcher.matches();
     }
+    public boolean isLastNameValid(String lastName) {
+        String regex = "[A-Z][a-z]{2,}";
+        pattern = Pattern.compile(regex);
+        matcher = pattern.matcher(lastName);
+        return matcher.matches();
+    }
 }
