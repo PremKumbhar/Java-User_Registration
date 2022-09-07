@@ -25,4 +25,10 @@ public class UserRegistrationInput {
         matcher = pattern.matcher(email);
         return matcher.matches();
     }
+    public boolean isMobileNumberValid(String mobilenumber) {
+        String regex = "(91)?[7-9][0-9]{9}";
+        pattern = Pattern.compile(regex);
+        matcher = pattern.matcher(mobilenumber);
+        return matcher.matches();
+    }
 }
