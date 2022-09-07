@@ -23,6 +23,13 @@ public class UserRegistration {
         else
             System.out.println("Invalid last name");
 
+        System.out.println("Enter email ");
+        String email = sc.next();
+        if (userRegistration.isEmailValid(email))
+            System.out.println("Valid email");
+        else
+            System.out.println("Invalid email");
+
 
 
 
