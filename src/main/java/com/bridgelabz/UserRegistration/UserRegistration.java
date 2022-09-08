@@ -79,16 +79,5 @@ public class UserRegistration {
             System.out.println(mail + " Invalid Email");
 
         }
-
-
-
-
-
-
-
-
-
-
-
     }
 }
