@@ -20,7 +20,8 @@ public class UserRegistrationInput {
         return matcher.matches();
     }
     public boolean isEmailValid(String email) {
-        String regex = "[a-z0-9.]+@[a-z]+.[a-z]{2,3}(.[a-z]{2,})*";
+        //String regex = "[a-z0-9.]+@[a-z]+.[a-z]{2,3}(.[a-z]{2,})*";
+        String regex = "^[a-zA-Z0-9]+([._+-]*[0-9A-Za-z]+)*@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-z]{2,4})?$";
         pattern = Pattern.compile(regex);
         matcher = pattern.matcher(email);
         return matcher.matches();
